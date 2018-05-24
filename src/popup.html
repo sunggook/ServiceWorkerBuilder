@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebNavigation Tech Demo Popup</title>
+    <link href="popup.css" rel="stylesheet" type="text/css">
+    <script src="popup.js"></script>
+    <style type="text/css" media="screen">
+          body { min-width:250px; text-align: center; }
+          #click-me { font-size: 15px; }
+      </style>
+  </head>
+  <body> 
+    <h2>Service Worker Builder</h2>
+    <div id='menu'>
+      <div id='clickme'>
+        <input id="sameOrigin" type="checkbox">Same origin only</input>
+        <input id="input-scopeUrl" placeholder="Target url with https"></input> <button id='click-me'>Click Me!</button>
+      </div>
+      <div id='results' style="display:none">
+        <h3 style='float: left'>Navigation List</h3> <button id='generate_click' style='display: inline-block'>Generate Service Worker</button>
+      </div>
+    </div>
+    <section style="display:none; width: 800px; height: 1000px;">
+    </section>
+    <div id='description'></div>
+  </body>
+</html>
